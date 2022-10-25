@@ -1,0 +1,33 @@
+- Domani è il compleanno di Silvia?
+    - TRUE
+        - Le comprerò un regalo
+        - Ho già un regalo per Silvia?
+            - TRUE
+                - E' un regalo che potrebbe piacerle?
+                    - TRUE
+                        - Porterò questo regalo
+                    - FALSE
+                        - Comprerò un altro regalo
+            - FALSE
+                - Cosa piace a silvia?
+                    - Lampada da tavolo
+                    - Stilografica
+                    - Libro
+                Cosa compro?
+                    - SE (Lampada da tavolo è disponibile) & (Arriverà in tempo /* prime /) & (Rientra nel budget)
+                        -TRUE
+                            - Comprerò una lampada da tavolo
+                        - FALSE
+                            - Comprerò qualcos' altro
+                    - SE (Stilografica è disponibile) & (Arriverà in tempo / prime /) & (Rientra nel budget)
+                        - TRUE
+                            - Comprerò una Stilografica
+                        - FALSE
+                            - Comprerò qualcos' altro
+                    - SE (Libro è disponibile) & (Arriverà in tempo / prime */) & (Rientra nel budget)
+                        - TRUE
+                            - Comprerò un libro
+                        - FALSE
+                            - (Comprerò una torta) o (le faccio gli auguri a voce) o (scriverò un messaggio)
+    - FALSE
+        - Non compro niente
